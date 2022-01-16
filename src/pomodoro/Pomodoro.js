@@ -234,6 +234,7 @@ function handleStopButton(){
           focusDuration={focusDuration}
           breakDuration={breakDuration}
           nextSession={nextSession}
+          isTimerRunning={isTimerRunning}
         />
       </div>
     </div>

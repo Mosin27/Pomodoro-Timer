@@ -17,7 +17,7 @@ function Session({ session, minutesToDuration, secondsToDuration, focusDuration,
                  <p className="lead" data-testid="session-sub-title">
                 {secondsToDuration(session?.timeRemaining)} remaining
                 </p>
-                <h3>{isTimerRunning}</h3>
+                <h3>{!isTimerRunning ? "PAUSED": null}</h3>
             </div>
         </div>
             <ProgressBar session={session} focusDuration={focusDuration} breakDuration={breakDuration} />
